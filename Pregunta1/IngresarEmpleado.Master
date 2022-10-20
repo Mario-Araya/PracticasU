@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IngresarEmpleado.Master.cs" Inherits="Pregunta1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+     <h1>Datos del Empleado</h1>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             Codigo<asp:TextBox ID="TxtCodigo" runat="server"></asp:TextBox><br />
+            Nombre<asp:TextBox ID="TxtNombre" runat="server"></asp:TextBox><br />
+            Horas_Laboradas<asp:TextBox ID="TxtHoras" runat="server"></asp:TextBox><br />
+            SalarioHora<asp:TextBox ID="TxtSal_Hora" runat="server"></asp:TextBox><br />
+            SalarioBruto<asp:TextBox ID="TxtSal_Bruto" runat="server"></asp:TextBox><br />
+            <asp:Button ID="btn_Incluir" runat="server" Text="Incluir" OnClick="btn_Incluir_Click" />
+        </div>
+    </form>
+    <div id="footer">
+        <span>maraya90642@ufide.ac.cr</span>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IngresarDeducciones.Master.cs" Inherits="Pregunta1.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link src="./Estilos/Style.css" href=Stylesheet" />
+</head>
+<body>
+     <h1>Deducciones del Empleado</h1>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             Codigo<asp:TextBox ID="TxtCodigo" runat="server"></asp:TextBox><br />
+            Id_empleado<asp:TextBox ID="TxtId_empleado" runat="server"></asp:TextBox><br />
+            Cooperativa<asp:TextBox ID="TxtCooperativa" runat="server"></asp:TextBox><br />
+            Prestamo<asp:TextBox ID="TxtPrestamo" runat="server"></asp:TextBox><br />
+            Ahorro<asp:TextBox ID="TxtAhorro" runat="server"></asp:TextBox><br />
+            <asp:Button ID="btn_Incluir" runat="server" Text="Incluir" OnClick="btn_Incluir_Click" />
+        </div>
+    </form>
+     <div id="footer">
+        <span>maraya90642@ufide.ac.cr</span>
+    </div>
+</body>
+</html>
